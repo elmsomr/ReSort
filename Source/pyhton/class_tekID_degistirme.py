@@ -24,4 +24,4 @@ for file in os.listdir(labels_dir):
 
         modified_files += 1
 
-print(f"✅ {modified_files} dosya güncellendi ve tüm etiketler 2'e çevrildi.")
+print(f"✅ {modified_files} dosya güncellendi.")
