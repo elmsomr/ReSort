@@ -1,0 +1,34 @@
+/* Navbar (Üst Çubuk) */
+.navbar {
+  width: 100%; /* Tam genişlikte */
+  background-color: #ffffff; /* Yeşil renk */
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Sayfanın üst kısmına sabitle */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Önde kalmasını sağlar */
+}
+/* Navbar Logosu (İkon + Yazı) */
+.navbar-brand {
+  font-size: 1.3em; /* Yazıyı büyüt */
+  font-weight: bold; /* Kalınlaştır */
+  display: flex;
+  align-items: center;
+  gap: 15px; /* İkon ve yazı arasına boşluk koy */
+  color: rgba(7,150,106,255);
+  
+}
+
+/* İkon Stili */
+.navbar-brand .faRecycle {
+  font-size: 2em; /* İkonu büyüt */
+}
+
+.brand-text {
+  color: black
+}
+

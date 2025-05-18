@@ -1,0 +1,77 @@
+/* Impact Container - Ana kutu */
+.impact-container {
+  background-color: white; /* Hafif yeşil arka plan */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 80px auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* İçerideki kutuları düzenleyen Flexbox */
+.impact-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Her bir metrik kutusunun genel tasarımı */
+.impact-item {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* İkonları büyük gösterme */
+.impact-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Atık (Çöp) Kutu Stili */
+.waste {
+  background-color: rgba(236,253,245,255); /* Açık Yeşil */
+  color: rgba(5,151,106,255);
+}
+
+/* Enerji Kutu Stili */
+.energy {
+  background-color: rgba(239,246,255,255); /* Açık Mavi */
+  color: rgba(38,102,234,255);
+}
+
+/* Ağaç Kutu Stili */
+.trees {
+  background-color: rgba(254,251,236,255); /* Açık Sarı */
+  color: rgba(217,119,10,255);
+}
+
+/* Metin Stilleri */
+.impact-item h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.impact-item p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .impact-box {
+    flex-direction: column;
+  }
+}
+
+body {
+  background-color: rgba(236,253,245,255);
+}
+
+

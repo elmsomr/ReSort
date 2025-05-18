@@ -1,0 +1,65 @@
+/* Ana konteyner */
+.events-container {
+  background-color: rgba(236,253,245,255); /* Hafif yeşil arka plan */
+  padding: 20px;
+  border-radius: 10px;
+  margin: -80px -95px 30px;
+  
+  text-align: left;
+}
+
+/* İç kutular için Flexbox düzeni */
+.events-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Her etkinliğin genel stili */
+.event-item {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* İkon Stilleri */
+.event-icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+/* Plaj Temizliği Kutusu */
+.cleanup {
+  background-color: #ffffff; /* Açık mavi */
+  color: #000000;
+}
+
+/* Geri Dönüşüm Atölyesi Kutusu */
+.workshop {
+  background-color: #ffffff; /* Açık sarı */
+  color: #000000;
+}
+
+/* Başlık stilleri */
+.event-item h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.event-item p {
+  font-size: 1.1em;
+  color: #333;
+  text-align: left;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .events-box {
+    flex-direction: column;
+  }
+}

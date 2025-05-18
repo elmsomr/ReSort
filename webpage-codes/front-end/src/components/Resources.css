@@ -1,0 +1,98 @@
+/* Ana konteyner */
+.resources-container {
+  background-color: #ffffff; /* Açık sarımsı yeşil */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px -95px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Butonların düzeni */
+.resource-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* Butonların genel stili */
+.resource-buttons button {
+  padding: 10px 150px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Buton renkleri */
+.glass {
+  background-color: rgba(208,250,228,255); /* Yeşil */
+}
+
+.plastic {
+  background-color: rgba(218,233,254,255); /* Mavi */
+}
+
+.paper {
+  background-color: rgba(254,243,198,255); /* Sarı */
+  
+}
+
+.metal {
+  background-color: rgba(243,244,246,255); /* Gri */
+}
+
+
+/* Hover Efektleri */
+.glass:hover {
+  background-color: #388e3c;
+}
+
+.plastic:hover {
+  background-color: #1976d2;
+}
+
+.paper:hover {
+  background-color: #fbc02d;
+}
+
+.metal:hover {
+  background-color: #757575;
+}
+
+/* Hızlı Geri Dönüşüm İpuçları */
+.quick-tips {
+  margin-top: 30px;
+  background-color: rgba(243,244,246,255);
+  padding: 15px ;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quick-tips h4 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.quick-tips ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quick-tips li {
+  font-size: 1.2em;
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .resource-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
