@@ -1,17 +1,11 @@
-## Datasets Used
+## Dataset Preparation
 
-For the training and evaluation of our object detection model, we used three separate datasets hosted on Roboflow. These datasets consist of annotated images categorized primarily by vehicle or waste types, and are tailored for real-time detection applications. Each dataset was carefully preprocessed and augmented using Roboflow's integrated tools.
+In our project, we created a custom dataset by combining and filtering images from three publicly available, pre-labeled datasets on Roboflow. The original datasets contained a wide range of waste categories. However, we selected and retained only the relevant classes for our classification task: **metal**, **paper**, **glass**, and **plastic**.
 
-### Dataset Links
+The filtered and merged datasets are as follows:
 
-- [Resort Dataset 1](https://app.roboflow.com/resort)  
-  Contains initial image samples with bounding box annotations for key object categories. Used as the base dataset for training.
+- [Resort Dataset 1](https://app.roboflow.com/resort)
+- [Resort Dataset 2](https://app.roboflow.com/resort2)
+- [Resort Dataset 3](https://app.roboflow.com/resort3)
 
-- [Resort Dataset 2](https://app.roboflow.com/resort2)  
-  Includes additional image samples with improved diversity and labeling accuracy. Helped improve model generalization.
-
-- [Resort Dataset 3](https://app.roboflow.com/resort3)  
-  Final dataset version containing merged and cleaned annotations. Used for fine-tuning and validation stages.
-
-Each dataset was exported in YOLO format and integrated seamlessly into our training pipeline.
-
+After selecting only the required classes, we combined all annotated images into a single dataset. This final dataset was then used for training our object detection model. All data was exported in YOLO format for compatibility with our training pipeline.
